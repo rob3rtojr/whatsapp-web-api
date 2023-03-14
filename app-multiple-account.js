@@ -138,6 +138,7 @@ const createSession = function(id, description) {
       }).catch(function (err) {
         console.log(err)
       })
+      
       console.log("*************************************");
     }
     
