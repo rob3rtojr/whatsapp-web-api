@@ -129,7 +129,7 @@ const createSession = function(id, description) {
       //resposta do agendamento
       //envia mensagem para o doutorweb:
 
-      axios.post("https://doutorweb.azurewebsites.net/sistema/whatsapp/aoReceber.asp",{
+      axios.post("http://doutorweb.azurewebsites.net/sistema/whatsapp/aoReceber.asp",{
         body: res.body,
         idMensagem: quoted.id.id,
         type: res.body
