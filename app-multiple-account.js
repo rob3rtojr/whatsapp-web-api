@@ -132,7 +132,7 @@ const createSession = function(id, description) {
       axios.post("https://doutorweb.azurewebsites.net/sistema/whatsapp/aoReceber.asp",{
         body: res.body,
         idMensagem: quoted.id.id,
-        type: res.bodygit
+        type: res.body
       }).then(function(response){
         console.log(response.data)
       }).catch(function (err) {
